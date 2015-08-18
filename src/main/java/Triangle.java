@@ -24,10 +24,23 @@ public class Triangle {
     return mSideThree;
   }
 
+  public boolean isNotTriangular() {
+    return (mSideOne + mSideTwo < mSideThree) || (mSideTwo + mSideThree < mSideOne) || (mSideThree + mSideOne < mSideTwo);
+  }
+
 /*
-  public boolean isEquilateral() {}
+  isIsosceles if !isNotTriangular && (mSideOne == mSideTwo || mSideTwo == mSideThree || mSideThree == mSideOne)
+  isScalene if !isNotTriangular && (mSideOne != mSideTwo) && (mSideOne != mSideThree) && (mSideTwo != mSideThree)
+  isEquilateral if mSideOne == mSideTwo && mSideThree
+
+
+
+  if (isNotTriangular)
+
+  /*public boolean isEquilateral() {
+    return mSideOne == mSideTwo && mSideThree;
+  }
   public boolean isIsosceles() {}
   public boolean isScalene() {}
 */
-
 }
