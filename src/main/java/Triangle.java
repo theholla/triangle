@@ -28,19 +28,8 @@ public class Triangle {
     return (mSideOne + mSideTwo < mSideThree) || (mSideTwo + mSideThree < mSideOne) || (mSideThree + mSideOne < mSideTwo);
   }
 
-/*
-  isIsosceles if !isNotTriangular && (mSideOne == mSideTwo || mSideTwo == mSideThree || mSideThree == mSideOne)
-  isScalene if !isNotTriangular && (mSideOne != mSideTwo) && (mSideOne != mSideThree) && (mSideTwo != mSideThree)
-  isEquilateral if mSideOne == mSideTwo && mSideThree
-
-
-
-  if (isNotTriangular)
-
-  /*public boolean isEquilateral() {
-    return mSideOne == mSideTwo && mSideThree;
+  public boolean isEquilateral() {
+    return (mSideOne == mSideTwo) && (mSideOne == mSideThree);
   }
-  public boolean isIsosceles() {}
-  public boolean isScalene() {}
-*/
+
 }
