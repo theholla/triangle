@@ -26,4 +26,17 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle(3, 4, 4);
     assertEquals(false, testTriangle.isEquilateral());
   }
+
+  @Test
+  public void newTriangle_isScalene_true() {
+    Triangle testTriangle = new Triangle(3, 4, 5);
+    assertEquals(true, testTriangle.isScalene());
+  }
+
+  @Test
+  public void newTriangle_isIsosceles_true() {
+    Triangle testTriangle = new Triangle(7, 7, 6);
+    assertEquals(true, testTriangle.isIsosceles());
+  }
+
 }

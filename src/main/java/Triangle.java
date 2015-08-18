@@ -25,11 +25,21 @@ public class Triangle {
   }
 
   public boolean isNotTriangular() {
-    return (mSideOne + mSideTwo < mSideThree) || (mSideTwo + mSideThree < mSideOne) || (mSideThree + mSideOne < mSideTwo);
+    return (mSideOne + mSideTwo < mSideThree) || (mSideTwo + mSideThree < mSideOne)
+          || (mSideThree + mSideOne < mSideTwo);
   }
 
   public boolean isEquilateral() {
     return (mSideOne == mSideTwo) && (mSideOne == mSideThree);
   }
 
+  public boolean isScalene() {
+    // also needs to != isNotTriangular
+    return (mSideOne != mSideTwo) && (mSideOne != mSideThree) && (mSideTwo != mSideThree);
+  }
+
+  public boolean isIsosceles() {
+    //also needs to != isNotTriangular
+    return (mSideOne == mSideTwo) | (mSideTwo == mSideThree) | (mSideThree == mSideOne);
+  }
 }
